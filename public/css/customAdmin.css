@@ -1,0 +1,76 @@
+﻿main, main aside, main section{
+    display: block;
+    width: 100%;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+    
+}
+main aside, main section{
+    width: 100%;
+    padding: 1rem 1%;
+}
+/*Card (Tarjeta)*/
+/*.card{
+    width: 100%;
+    background: white;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,.5);
+    position: relative;
+}
+.card .btn-close{
+    border: 0;
+    background: transparent;
+    color: rgba(0,0,0,.65);
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    z-index: 2;
+}
+.card>.footer{
+    padding: 1rem;
+    border-top: inherit;
+}*/
+
+@media only screen and (min-width: 768px){
+    main{
+        display: table;
+        width: 100%;
+    }
+    main aside:last-child {
+        width: 100%;
+    }
+    
+    main section {
+        width: 70%;
+    }
+    main aside:first-child {
+        width: 30%;
+    }
+    main aside, main section {
+        display: inline-block;
+        float: left;
+        
+    }
+}
+@media only screen and (min-width: 992px){
+    /*Estructura HTML5*/
+    
+    main aside, main section{
+        display: table-cell;
+        padding: 1rem 1%;
+        vertical-align: top;
+        float: none;
+    }
+    main section{
+        width: 56%;
+        background: inherit;
+        position: relative;
+    }
+    main aside{
+        width: 22%!important;
+        background: rgba(0,0,0,.05);
+    }
+}
+@media only screen and (min-width: 1200px){
+    
+}
